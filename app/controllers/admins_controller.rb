@@ -3,6 +3,8 @@ class AdminsController < ApplicationController
     @administrator = Administrator.new
   end
   def create
-    
+    name = params[:admins][:name]
+    password = params[:admins][:password]
+    debugger
   end
 end
