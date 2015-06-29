@@ -9,23 +9,18 @@
     </ul>
 
     <div id="manage-articles" class="manage-pane">
-        <div class="row">
-            <div class="col-sm-6">
-                文章1
+        <% @articles_list.each do |article| %>
+            <div class="row">
+                <div class="col-sm-6">
+                    <%= article.post_title %>
+                </div>
+                <div class="col-sm-6">
+                    删除功能
+                </div>
             </div>
-            <div class="col-sm-6">
-                删除功能
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                文章2
-            </div>
-            <div class="col-sm-6">
-                删除功能
-            </div>
-        </div>
+        <% end %>
     </div>
+    
     <div id="write-article" class="manage-pane">
         <%= form_for :article do |f| %>        
         <p>

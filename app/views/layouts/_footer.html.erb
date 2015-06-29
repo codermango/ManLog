@@ -1,6 +1,11 @@
 <footer class="blog-footer">
     <p>
-        <%= link_to '管理入口', admins_login_path %>
+        <% if admin_logged_in? %>
+            <%= link_to '管理主页', admins_index_path, method: :get %>
+            <%= link_to '退出管理', admins_logout_path, method: :delete %>
+        <% else %>
+            <%= link_to '管理入口', admins_login_path %>
+        <% end %>
     </p>
     <p>
         <a href="#">Back to top</a>
