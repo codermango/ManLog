@@ -1,0 +1,46 @@
+<div class='container'>
+    <ul class="nav nav-tabs">
+        <li id="li-manage-articles" role="presentation" class="active">
+            <a href="#">文章管理</a>
+        </li>
+        <li id="li-write-article" role="presentation">
+            <a href="#">写文章</a>
+        </li>
+    </ul>
+
+    <div id="manage-articles" class="manage-pane">
+        <div class="row">
+            <div class="col-sm-6">
+                文章1
+            </div>
+            <div class="col-sm-6">
+                删除功能
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                文章2
+            </div>
+            <div class="col-sm-6">
+                删除功能
+            </div>
+        </div>
+    </div>
+    <div id="write-article" class="manage-pane">
+        <%= form_for :article do |f| %>        
+        <p>
+            <%= f.label :title %>        
+            <br>        
+            <%= f.text_field :title %></p>
+
+        <p>
+            <%= f.label :text %>        
+            <br>        
+            <%= f.text_area :text %></p>
+
+        <p>
+            <%= f.submit %></p>
+        <% end %>        
+    </div>
+
+</div>
