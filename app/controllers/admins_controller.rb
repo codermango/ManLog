@@ -27,6 +27,10 @@ class AdminsController < ApplicationController
 
 
   def index
-    @articles_list = Article.order(updated_at: :desc).all
+    if admin_logged_in?
+      @articles_list = Article.order(updated_at: :desc).all
+    else
+      redirect_to root_url
+    end
   end
 end
