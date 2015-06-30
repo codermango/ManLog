@@ -1,3 +1,14 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+ * Blog posts
+ */
+.blog-post {
+    margin-bottom: 60px;
+}
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.blog-post-meta {
+    /*margin-bottom: 20px;*/
+    color: #999;
+}

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post 'admins/login' => 'admins#create'
   get 'admins/index' => 'admins#index'
   delete 'admins/logout' => 'admins#destroy'
+  delete 'admins/index' => 'articles#destroy'
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
