@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @markdown_text = markdown @article.post_text
   end
 
   def destroy

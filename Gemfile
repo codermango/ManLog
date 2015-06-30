@@ -25,6 +25,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'therubyracer'
+gem 'redcarpet'
+gem 'coderay'
+gem 'pygments.rb'
 
 
 # Use ActiveModel has_secure_password
