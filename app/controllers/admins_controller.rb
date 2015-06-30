@@ -27,6 +27,6 @@ class AdminsController < ApplicationController
 
 
   def index
-    @articles_list = Article.order(:updated_at).all
+    @articles_list = Article.order(updated_at: :desc).all
   end
 end
