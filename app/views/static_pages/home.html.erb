@@ -1,21 +1,21 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-8 blog-main">
-
-            <% @articles_list.each do |article| %>
+            <% for i in 0...@articles_list.count %>
                 <div class="blog-post">
                     <h2 class="blog-post-title">
-                        <%= link_to article.post_title, article %>
+                        <%= link_to @articles_list[i].post_title, @articles_list[i] %>
                     </h2>
                     <p class="blog-post-meta">
-                        <%= article.updated_at %> by
+                        <%= @articles_list[i].updated_at %> by
                         <a href="#">Mark</a>
                     <p>
                     <p>
-                        <%= article.post_text %>
+                        <%= @markdown_text_list[i] %>
                     </p>
                 </div> <!-- /.blog-post -->
             <% end %>
+
 
             <nav>
                 <ul class="pager">
