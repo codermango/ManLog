@@ -24,14 +24,14 @@
     <div id="write-article" class="manage-pane">
         <%= form_for :article, url: articles_path do |f| %>        
         <p>
-            <%= f.label :post_title %>        
+            <%= f.label :post_title, '文章标题' %>        
             <br>        
-            <%= f.text_field :post_title %></p>
+            <%= f.text_field :post_title, class: 'form-control' %></p>
 
         <p>
-            <%= f.label :post_text %>        
+            <%= f.label :post_text, '正文' %>        
             <br>        
-            <%= f.text_area :post_text %></p>
+            <%= f.text_area :post_text, class: 'form-control', spellcheck: 'false' %></p>
 
         <p>
             <%= f.submit %></p>

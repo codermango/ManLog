@@ -22,3 +22,10 @@ form {
     margin: 10px 0 10px 10px;
 }
 
+textarea.form-control {
+    resize: none;
+    height: 300px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+

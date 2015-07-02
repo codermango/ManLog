@@ -12,4 +12,6 @@ $(function() {
         $("#manage-articles").hide();
         $("#write-article").show();
     });
+
+
 });
