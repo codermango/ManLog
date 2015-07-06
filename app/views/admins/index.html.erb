@@ -12,7 +12,7 @@
         <% @articles_list.each do |article| %>
             <div class="row">
                 <div class="col-sm-6">
-                    <%= article.post_title %>
+                    <%= link_to article.post_title, edit_article_path(article) %>
                 </div>
                 <div class="col-sm-6">
                     <%= link_to '删除文章', admins_index_path(:article_id => article.id), method: :delete, data: { confirm: 'Are you sure?' }%>
