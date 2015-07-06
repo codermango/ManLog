@@ -1,28 +1,19 @@
-== README
+#ManLog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##介绍
+ManLog是一个由于个人兴趣学习Ruby on Rails产生的网站，目前仅支持发布博文。博文的编写采用Markdown格式。
 
-Things you may want to cover:
+##功能
+* 文章的发布，更新，删除。
 
-* Ruby version
+##第三方包
+* Bootstrap：不多说，优秀的前端框架。
+* redcarpet：一个解析Markdown文本的Ruby包。
+* pygments.rb：一个Ruby版本的语法高亮包。
+* bootstrap-sass：支持sass环境的bootstrap。
 
-* System dependencies
+##部署情况
+最近部署在heroku，由于还没有绑定自定义域名，所以目前的地址为[codermango.herokuapp.com](http://codermango.herokuapp.com)。
 
-* Configuration
+后期会考虑更换服务器或者寻找其他解决方案。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
