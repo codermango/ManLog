@@ -1,15 +1,16 @@
 <div class='container'>
-    <ul class="nav nav-tabs">
-        <li id="li-manage-articles" role="presentation" class="active">
-            <a href="#">文章管理</a>
+    <ul id="adminTab" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#manage-articles" id="manage-articles-tab" role="tab" data-toggle="tab" aria-controls="manage-articles" aria-expanded="true">文章管理</a>
         </li>
-        <li id="li-write-article" role="presentation">
-            <a href="#">写文章</a>
+        <li role="presentation">
+            <a href="#write-article" id="write-article-tab" role="tab" data-toggle="tab" aria-controls="write-article" aria-expanded="false">写文章</a>
         </li>
     </ul>
 
-    <div id="manage-articles" class="manage-pane">
-        <% @articles_list.each do |article| %>
+    <div id="adminTabContent" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="manage-articles" aria-labelledby="manage-articles-tab">
+            <% @articles_list.each do |article| %>
             <div class="row">
                 <div class="col-sm-6">
                     <%= link_to article.post_title, edit_article_path(article) %>
@@ -18,24 +19,26 @@
                     <%= link_to '删除文章', admins_index_path(:article_id => article.id), method: :delete, data: { confirm: 'Are you sure?' }%>
                 </div>
             </div>
-        <% end %>
-    </div>
+            <% end %>
+        </div>
 
-    <div id="write-article" class="manage-pane">
-        <%= form_for :article, url: articles_path do |f| %>        
-        <p>
-            <%= f.label :post_title, '文章标题' %>        
-            <br>        
-            <%= f.text_field :post_title, class: 'form-control' %></p>
+        <div role="tabpanel" class="tab-pane fade" id="write-article" aria-labelledby="write-article-tab">
+            <%= form_for :article, url: articles_path do |f| %>
+            <p>
+                <%= f.label :post_title, '文章标题' %>
+                <br>            
+                <%= f.text_field :post_title, class: 'form-control' %></p>
 
-        <p>
-            <%= f.label :post_text, '正文' %>        
-            <br>        
-            <%= f.text_area :post_text, class: 'form-control', spellcheck: 'false' %></p>
+            <p>
+                <%= f.label :post_text, '正文' %>
+                <br>
+                <%= f.text_area :post_text, class: 'form-control', spellcheck: 'false' %></p>
 
-        <p>
-            <%= f.submit %></p>
-        <% end %>        
+            <p>
+                <%= f.submit %></p>
+            <% end %>                  
+        </div>
+
     </div>
 
 </div>
