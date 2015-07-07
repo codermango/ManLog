@@ -9,4 +9,8 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def archives
+    @archives = Article.order(updated_at: :desc).all
+  end
 end

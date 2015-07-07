@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="blog-post">
+        <ul class="list-group">
+            <% @archives.each do |article| %>
+                <li class="list-group-item">
+                    <span class="badge"><%= article.updated_at.strftime("%Y-%m-%d") %></span>
+                    <%= link_to article.post_title, article_path(article) %>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

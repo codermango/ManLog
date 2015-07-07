@@ -7,7 +7,7 @@
                         <%= link_to @articles_list[i].post_title, @articles_list[i] %>
                     </h2>
                     <p class="blog-post-meta">
-                        <%= @articles_list[i].updated_at %> by
+                        <%= @articles_list[i].updated_at.strftime("%Y-%m-%d") %> by
                         <a href="#">Mark</a>
                     <p>
                     <p>
