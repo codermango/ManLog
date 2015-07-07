@@ -10,16 +10,18 @@
 
     <div id="adminTabContent" class="tab-content">
         <div role="tabpanel" class="tab-pane fade active in" id="manage-articles" aria-labelledby="manage-articles-tab">
-            <% @articles_list.each do |article| %>
-            <div class="row">
-                <div class="col-sm-6">
-                    <%= link_to article.post_title, edit_article_path(article) %>
-                </div>
-                <div class="col-sm-6">
-                    <%= link_to '删除文章', admins_index_path(:article_id => article.id), method: :delete, data: { confirm: 'Are you sure?' }%>
-                </div>
-            </div>
-            <% end %>
+            <table class="table">
+                <% @articles_list.each do |article| %>
+                    <tr>
+                        <td>
+                            <%= link_to article.post_title, edit_article_path(article) %>
+                        </td>
+                        <td>
+                            <%= link_to '删除文章', admins_index_path(:article_id => article.id), method: :delete, data: { confirm: 'Are you sure?' }%>
+                        </td>
+                    </tr>
+                <% end %>
+            </table>
         </div>
 
         <div role="tabpanel" class="tab-pane fade" id="write-article" aria-labelledby="write-article-tab">
