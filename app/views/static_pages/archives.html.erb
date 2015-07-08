@@ -1,10 +1,10 @@
 <div class="container">
     <div class="blog-post">
         <ul class="list-group">
-            <% @archives.each do |article| %>
+            <% @archives_info.each do |article_info| %>
                 <li class="list-group-item">
-                    <span class="badge"><%= article.updated_at.strftime("%Y-%m-%d") %></span>
-                    <%= link_to article.post_title, article_path(article) %>
+                    <span class="badge"><%= article_info[:time] %></span>
+                    <%= link_to article_info[:title], article_path(article_info[:id]) %>
                 </li>
             <% end %>
         </ul>

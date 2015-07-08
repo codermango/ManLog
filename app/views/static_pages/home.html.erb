@@ -1,17 +1,17 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-8 blog-main">
-            <% for i in 0...@articles_list.count %>
+            <% @articles_for_show.each do |article_show| %>
                 <div class="blog-post">
                     <h2 class="blog-post-title">
-                        <%= link_to @articles_list[i].post_title, @articles_list[i] %>
+                        <%= link_to article_show[:title], article_path(article_show[:id]) %>
                     </h2>
                     <p class="blog-post-meta">
-                        <%= @articles_list[i].updated_at.strftime("%Y-%m-%d") %> by
+                        <%= article_show[:time] %> by
                         <a href="#">Mark</a>
                     <p>
                     <p>
-                        <%= @markdown_text_list[i] %>
+                        <%= article_show[:markdown_text] %>
                     </p>
                 </div> <!-- /.blog-post -->
             <% end %>
