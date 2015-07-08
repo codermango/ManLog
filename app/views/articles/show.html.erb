@@ -4,7 +4,7 @@
             <%= @article.post_title %>
         </h2>
         <p class="blog-post-meta">
-            <%= @article.updated_at %> by
+            <%= @article.updated_at.strftime("%Y-%m-%d") %> by
             <a href="#">Mark</a>
         </p>
         <p>
