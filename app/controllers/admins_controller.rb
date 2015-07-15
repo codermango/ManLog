@@ -14,9 +14,13 @@ class AdminsController < ApplicationController
         redirect_to admins_index_path
       else
         # 用户存在，密码错误
+        @error_msg = "密码错误"
+        render 'new'
       end
     else
         # 用户名不存在
+        @error_msg = "用户名不存在"
+        render 'new'
     end
   end
 
