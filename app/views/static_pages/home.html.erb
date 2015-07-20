@@ -14,80 +14,41 @@
                         <%= article_show[:markdown_text] %>
                     </p>
                 </div> <!-- /.blog-post -->
+                <hr>
             <% end %>
-
-
-            <!-- <nav>
-                <ul class="pager">
-                    <li>
-                        <a href="#">Previous</a>
-                    </li>
-                    <li>
-                        <a href="#">Next</a>
-                    </li>
-                </ul>
-            </nav> -->
 
         </div>
         <!-- /.blog-main -->            
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
             <div class="sidebar-module sidebar-module-inset">
-                <h4>About</h4>
+                <h4><b>关于</b></h4>
                 <p>
-                    网站正在开发中……<br>
-                    更多信息稍后显示
+                    姓名：Mark <br>
+                    目前：旅居斯德哥尔摩 <br>
+                    理想：编程，写作，环游世界 <br>
                 </p>
             </div>
-<!--             <div class="sidebar-module">
-                <h4>Archives</h4>
-                <ol class="list-unstyled">
-                    <li>
-                        <a href="#">March 2014</a>
-                    </li>
-                    <li>
-                        <a href="#">February 2014</a>
-                    </li>
-                    <li>
-                        <a href="#">January 2014</a>
-                    </li>
-                    <li>
-                        <a href="#">December 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">November 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">October 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">September 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">August 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">July 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">June 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">May 2013</a>
-                    </li>
-                    <li>
-                        <a href="#">April 2013</a>
-                    </li>
-                </ol>
-            </div> -->
-            <div class="sidebar-module">
-                <h4>Elsewhere</h4>
+
+            <div class="sidebar-module sidebar-module-inset">
+                <%= image_tag("mark_weichat.jpg", class: "wechat-image") %>
+            </div>
+
+            <div class="sidebar-module sidebar-module-inset">
+                <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=2&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1937503763&verifier=88272bc2&colors=F5F5F5,F5F5F5,666666,0082cb,ecfbfd&dpc=1"></iframe>
+            </div>
+            <div class="sidebar-module sidebar-module-inset">
+            <h4><b>Links</b></h4>
                 <ol class="list-unstyled">
                     <li>
                         <a href="https://github.com/codermango">GitHub</a>
                     </li>
+                    <li>
+                        <a href="https://instagram.com/codermango/">Instagram</a>
+                    </li>
                 </ol>
             </div>
+
         </div><!-- /.blog-sidebar --> 
     </div><!-- /.row -->            
 </div> <!-- container -->
