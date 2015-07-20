@@ -67,6 +67,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .blog-header {
     padding-top: 20px;
     padding-bottom: 20px;
+    transform: rotate(-5.5deg);
 }
 .blog-title {
     margin-top: 50px;
@@ -147,6 +148,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
  */
 .wechat-image {
     max-width: 100%;
+}
+
+.main-box {
+    margin-top: 50px;
 }
 
 
