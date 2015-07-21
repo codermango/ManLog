@@ -32,7 +32,7 @@ class AdminsController < ApplicationController
 
   def index
     if admin_logged_in?
-      @articles_list = Article.order(updated_at: :desc).all
+      @articles_list = Article.order(created_at: :desc).all
     else
       redirect_to root_url
     end
