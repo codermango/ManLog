@@ -2,7 +2,7 @@
 ###See below for an English version###
 
 ##介绍
-ManLog是一个由于个人兴趣学习Ruby on Rails产生的网站，目前仅支持发布博文。博文的编写采用Markdown格式。
+ManLog是一个由于个人兴趣学习Ruby on Rails产生的网站，目前仅支持发布博文，删除博文，更新博文。博文的编写采用Markdown格式。
 
 ##截图
 ![image](https://github.com/codermango/codermango_blog/raw/master/readme_images/blog_home.png)
@@ -24,4 +24,31 @@ ManLog是一个由于个人兴趣学习Ruby on Rails产生的网站，目前仅�
 后期会考虑更换服务器或者寻找其他解决方案。
 
 ## **更多功能正在开发中**
+
+
+---
+##Introduction
+ManLog is a personal blog website built on Ruby on Rails because my personal interests. It only supports publish, delete and modify posts.
+
+##Screenshot  
+![image](https://github.com/codermango/codermango_blog/raw/master/readme_images/blog_home.png)
+
+##Function
+* Publish, delete and modify posts.
+
+##Dependency
+* Bootstrap
+* redcarpet
+* pygments.rb
+* bootstrap-sass
+
+##Deployment
+For now, ManLog is deployed on heroku, you can visit it by [codermango.com](http://codermango.com) and [codermango.herokuapp.com](http://codermango.herokuapp.com). It will give warning when you visit [codermango.com](http://codermango.com) because of lacking SSL certificate.
+
+
+
+
+
+
+
 
