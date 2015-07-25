@@ -12,9 +12,10 @@
             <%= f.text_area :post_text, class: 'form-control', spellcheck: 'false' %></p>
 
         <p>
-            <%= link_to 'Cancel', article_path %>
+            <!-- <%= link_to 'Cancel', article_path %> -->
             <%= f.submit %>
         </p>
         <% end %>
+        <%= button_to "Cancel", article_path, :method => :get %>
     </div>
 </div>
