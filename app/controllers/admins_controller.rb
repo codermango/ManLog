@@ -1,16 +1,16 @@
 class AdminsController < ApplicationController
   def new
-    @admins = Administrator.new
+    @admins = Admin.new
   end
   def create
     name = params[:admins][:name]
     password = params[:admins][:password]
-    administrator = Administrator.find_by(name: name)
-    
-    if administrator
-      if administrator.password == password
+    admin = Admin.find_by(name: name)
+    debugger
+    if admin
+      if admin.password == password
         # 如果登陆成功
-        admin_login(administrator.id)
+        admin_login(admin.id)
         redirect_to admins_index_path
       else
         # 用户存在，密码错误
