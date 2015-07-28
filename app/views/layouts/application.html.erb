@@ -11,5 +11,15 @@
 <%= yield %>
 <%= render 'layouts/footer' %>
 <%= debug(params) if Rails.env.development? %>
+
+<!-- 必须放在页面加载之后，如果放在head里面，由于点击导航栏的时候head并没有重新加载，函数不会执行，页面就没有高亮效果 -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('pre').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    });
+</script>
+
 </body>
 </html>
