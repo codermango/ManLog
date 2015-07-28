@@ -15,6 +15,7 @@ ManLog是一个由于个人兴趣学习Ruby on Rails产生的网站，目前仅�
 * redcarpet：一个解析Markdown文本的Ruby包。
 * pygments.rb：一个Ruby版本的语法高亮包。
 * bootstrap-sass：支持sass环境的bootstrap。
+* highlight.js: 语法高亮。
 
 ##部署情况
 最近部署在heroku，自定义域名为[codermango.com](http://codermango.com)，也可以通过[codermango.herokuapp.com](http://codermango.herokuapp.com)访问。
@@ -41,6 +42,7 @@ ManLog is a personal blog website built on Ruby on Rails because my personal int
 * redcarpet
 * pygments.rb
 * bootstrap-sass
+* highlight.js
 
 ##Deployment
 For now, ManLog is deployed on heroku, you can visit it by [codermango.com](http://codermango.com) and [codermango.herokuapp.com](http://codermango.herokuapp.com). It will give warning when you visit [codermango.com](http://codermango.com) because of lacking SSL certificate.
