@@ -6,7 +6,6 @@ class AdminsController < ApplicationController
     name = params[:admins][:name]
     password = params[:admins][:password]
     admin = Admin.find_by(name: name)
-    debugger
     if admin
       if admin.password == password
         # 如果登陆成功
