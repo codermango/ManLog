@@ -44,6 +44,32 @@
             <% end %>                  
         </div>
 
+        <div role="tabpanel" class="tab-pane fade" id="bloginfo-setting" aria-labelledby="bloginfo-setting-tab">
+            <%= form_for :bloginfo, url: articles_path do |f| %>
+            <p>
+                <%= f.label :subtitle, '博客副标题' %>
+                <br>            
+                <%= f.text_field :subtitle, class: 'form-control' %></p>
+
+            <p>
+                <%= f.label :about, '关于' %>
+                <br>
+                <%= f.text_area :about, class: 'form-control', spellcheck: 'false' %></p>
+            <p>
+            <p>
+                <%= f.label :links, '常用链接' %>
+                <br>
+                <%= f.text_area :links, class: 'form-control', spellcheck: 'false' %></p>
+            <p>
+            <p>
+                <%= f.label :friendlinks, '友情链接' %>
+                <br>
+                <%= f.text_area :friendlinks, class: 'form-control', spellcheck: 'false' %></p>
+            <p>
+                <%= f.submit %></p>
+            <% end %>  
+        </div>
+
     </div>
 
 </div>

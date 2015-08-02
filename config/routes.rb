@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   delete 'admins/index' => 'articles#destroy'
   get 'admins/:id/edit' => 'articles#edit'
   get 'archives' => 'static_pages#archives'
+  get 'admins/bloginfo' => 'bloginfo#edit'
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
@@ -25,6 +26,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :articles
+
 
   # Example resource route with options:
   #   resources :products do
